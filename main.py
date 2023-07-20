@@ -172,7 +172,7 @@ async def payment(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         [InlineKeyboardButton("Annually", callback_data="sub-annually")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    reply_msg = "<b>Tis is a subscription based payment, thus you will be charged monthly(Every month), quarterly(Every 3 months), biannually(Every 6 months) or annually(Every year).</b>\n\n<b>Here are the prices(Naira) per subscription basis:</b>\n<i>Monthly - <s>20,000</s> 15,000</i>\n<i>Quarterly - <s>60,000</s> 50,000</i>\n<i>BiAnnually - <s>120,000</s> 100,000</i>\n<i>Annually - <s>240,000</s> 200,000</i>\n\n<i>Click any button below to choose your subscription basis</i>"
+    reply_msg = "<b>Tis is a subscription based payment, thus you will be charged monthly(Every month), quarterly(Every 3 months), biannually(Every 6 months) or annually(Every year).</b>\n\n<b>Here are the prices(Naira) per subscription basis:</b>\n<i>Monthly - <s>30,000</s> 15,000</i>\n<i>Quarterly - <s>90,000</s> 60,000</i>\n<i>BiAnnually - <s>180,000</s> 120,000</i>\n<i>Annually - <s>360,000</s> 240,000</i>\n\n<i>Click any button below to choose your subscription basis</i>"
     await query.message.reply_html(text=reply_msg, reply_markup=reply_markup)
 
     return PAYMENT

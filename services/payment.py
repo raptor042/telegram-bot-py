@@ -34,5 +34,5 @@ def cancel(code, token):
     except:
         logging.error("Unable to send request to payment gateway")
     else:
-        print(response.json())
-        return response.json()
+        print(response.text)
+        return response.text
